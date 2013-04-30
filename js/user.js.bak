@@ -1,0 +1,211 @@
+// Скрипты, которые стартуют при загрузке страницы
+window.onload = function() {
+$('.dropdown-toogle').dropdown('toogle')
+}
+
+var Alert_Text = [
+'Ангидрит твою перекись марганца','Апатит твою Хибины мать','В бога душу мать','В рот пароход','Грёбаный Экибастуз','Да ёксель-мопсель, трах-тибидох-тибидох','Дри твоё масло','Ё моё','Дарданелла через Босфора Гибралтар и Керченский пролив','Евпатий-коловратий','Едрёна колотушка','Едрёна кочерыжка','Едрёна макарона','Едрёна Матрёна','Едрид-мадрид','Едрит твои лапти','Едрит твою налево','Едрить твою колотушку','Едрить тебя за ногу','Едрическая сила','Едрический сандаль','Едришкин шиш','Ёж твою в корень','Ёк кошелёк','Ёк макарёк','Ёкараный бабай','Ёханый бабай','Ёклмн жэпэчэшэце','Ёклмнейка опрстейка','Ёксель-моксель','Ёлки-иголки','Ёлки-метёлки','Ёлки-моталки','Ёлки-палки','Ёлкина вошь','Ёлочки-палочки','Ёлы-палы','Ёперный балет','Ёперный театр','Епишкины калоши','Ёпрст иклмн','Ёптель-коптель','Ёптерный малахай','Ёптыш','Ёпть','Етит твою в качель','Етит твою, Филипыч','Етитный дух','Етить-колотить','Етишкин кот','Ёшки-матрёшки','Кошки-поварёшки','Ёшкин кот','Ёшкин-кошкин','Ёшкин пистолет','Ёшкин свет','И битвою мать-Россия спасена','И биться сердце перестало','Итить твою ежу налево','Итить твою за ногу','Матерь вашу','Мать моя женщина','Мать моя женщина, вся в саже','Мать моя женщина, отец мой мужчина','Мать моя, в коньках на босу ногу','Мать моя Сабонису по пояс','Мать моя с Ярмольником училась','Мать-перемать','Мать твою за ногу','Моп твою ять','Ну ёлки-палки','Ну ё-моё, черешня','Эфиоптвоюмать','Ядрён-батон','Япона мать','Японский башмак','Японский бог','Японский городовой','Японский хрен','Японский чайник','Разгридрит твою перекись водорода','Раскудрить твою через коромысло','Растудысь его в тудысь','Растудыть твою налево','Твою дивизию','Твою ж маму','Твою качель','Твою мать дивизию три раза за ногу','Твою мать через семь ворот да с погонами','Тить твою за ногу нехай','Твое налево','Тудыть его за ногу','Тудыть твою налево','В рот мне ноги'
+]
+var Debugging = false;
+
+// ==== ОБЩИЕ ФУНКЦИИ ====
+function startLoadAnimation() {
+    if (Debugging) console.log('loadcomment: StartLoadAnimation;');
+    div_loadimage.addClass("spinner").animate({"opacity":1},AnimationTimeSlideHorisontal); // Показываем картинку
+}
+function stopLoadAnimation() {
+    if (Debugging) console.log('loadcomment: StopLoadAnimation;');
+    div_loadimage.removeClass("spinner").animate({"opacity":0},AnimationTimeSlideHorisontal); // Скрываем картинку
+}
+
+function CreateAlert(type,text) { // Создаёт alert и передаёт его идентификатор
+    md5 = hex_md5(type+text); // ID создаём из md5
+    var head = Alert_Text[Math.floor(Math.random() * (Alert_Text.length))];
+    arr = 
+['   <div id='+md5+' class="alert alert-block alert-'+type+' fade in">\n      <button type="button" class="close" data-dismiss="alert">×</button> \n      <strong>'+head+'!</strong>'+text+'\n    </div>',md5];
+    return arr; // Передаёт текст и id
+} 
+
+function errorLoad(text,thrown) { // Вызывается при ошибке
+    _showhideimage(); // Показываем неизменённую дату
+    a = CreateAlert('error',' Произошла ошибка при загрузке страницы. Текст ошибки: '+thrown+' '+text)
+    alerts.append(a[0]); // Добавляем алерт в див с алертами
+    $('#'+a[1])
+        .alert() // Делаем алерт удаляемым
+        .oneTime("10s",function() {$(this).alert('close')}); // И убираем его через десять секунд
+}
+
+// =========== ДЛЯ СМЕНЫ КОНТЕНТА ===============
+var div_content = $('#content'); // Блок с контентом
+var div_loadimage = $('#spinner'); // Крутилка-загрузка
+var alerts = $('#ForAlerts'); // Алерт, выскакивающий при ошибке загрузки
+var AnimationTimeSlideHorisontal = 100; // Время анимации горизонтали
+var AnimationTimeSlideVertical = 250; // Время анимации вертикали 
+
+
+var Data = '';
+
+function startAjax(el) { // Запускаем перед началом запроса
+    startLoadAnimation(); // Показываем картинку
+    div_content.queue('fx',[]).queue(function() {
+        $(this).animate({"margin-left":"0px","opacity":0},AnimationTimeSlideHorisontal);
+        $(this).dequeue();
+    }); // Показываем и смещаем блок с контентом
+    $('#menu').children().removeClass('active'); // Убираем метку активности
+
+}
+
+function insertHTML(el,data){
+    el.html(data);
+    scripts = el.find('script');
+    for (i=0; i<scripts.length; i++) {
+        eval(scripts[i]);
+    }
+    if (Debugging) console.log('insertHTML: i was updated '+scripts.lenght+' scripts!');
+}
+
+function _showhideimage(data) { // Показываем всё обратно
+    stopLoadAnimation(); // Скрываем картинку
+    div_content.queue(function() {
+        insertHTML($(this),data)
+        $(this).animate({"margin-left":"20px","opacity":1},AnimationTimeSlideHorisontal); // Показываем и смещаем блок с контентом
+        $(this).dequeue();
+    });
+}
+
+function succesLoadPage(data,status,el) { // Вызывается при удачном запросе
+    _showhideimage(data); // Показываем
+    var url = el.attr('href'); // Из родителя достаёт адрес
+    history.pushState(null,null,url); // Меняем адрес
+    el.parent().addClass('active'); // 
+}
+
+function loadpage(el) {
+    $('.alert').alert('close'); // Закрывает уже открытые алерты
+    var url = el.attr('href'); // Нужный адрес находится в ссылке -- оттуда его и забираем
+    $.ajax({
+        url: url,
+        cache: false,
+        dataType: "html",
+        data: {},
+        beforeSend: function () {startAjax(el)},
+        success: function (data,status) {succesLoadPage(data,status,el)},
+        error: function(XHR,text,thrown) {errorLoad(text,thrown)}
+    });
+}
+
+
+// ============= ДЛЯ РАЗВОРОТА НОВОСТЕЙ =================
+var isMini = true;
+
+function maxmin_news() {
+    var height = $('#newsheight').height();
+    var news = $('#news');
+    var minibutton = $('#minimized');
+    if (isMini) {
+        news.animate({'height':height},AnimationTimeSlideVertical,'swing');
+        minibutton.text("Свернуть");
+    }
+    else {
+        news.animate({height:"1em"},AnimationTimeSlideVertical,'swing');
+        minibutton.text("Развернуть");
+    }
+    isMini = ! isMini;
+}
+
+// ================= ДЛЯ ПОДГРУЗКИ КОММЕНТАРИЕВ ================
+
+var commentsOpened = {};
+
+function commentHeightDown(num) {
+    if (Debugging) console.log('loadcomment: commentHeightDown;');
+    var el = $('#comments'+num);
+    el.animate({'height':0},AnimationTimeSlideVertical);
+    el.children().animate({'opacity':0},AnimationTimeSlideVertical);
+    commentsOpened[num] = false;
+}
+
+function commentHeightUp(num) {
+    if (Debugging) console.log('loadcomment: commentHeightDown;');
+    var el = $('#comments'+num);
+    var height = el.children().height();
+    el.animate({'height':height},AnimationTimeSlideVertical);
+    el.children().animate({'opacity':'1'},AnimationTimeSlideVertical);
+    commentsOpened[num] = true;
+}
+
+function succesLoadComm(num,data) {
+    if (Debugging) console.log('loadcomment: == Success Load ==');
+    var el = $("#comments"+num);
+    el.children().html(data);
+    stopLoadAnimation();
+    commentHeightUp(num);
+}
+
+function loadcomment(el) {
+    var num = el.attr('num');
+    if (commentsOpened[num] == true) {
+        if (Debugging) console.log('loadcomment: == Down elements ==;');
+        commentHeightDown(num);
+    } else {
+        if (Debugging) console.log('loadcomment: == Start Ajax ==;');
+        var url = 'comments'+num+'.html';
+        $.ajax({
+            url: url,
+            cache: false,
+            dataType: "html",
+            data: {},
+            beforeSend: function () {startLoadAnimation()},
+            success: function (data,status) {succesLoadComm(num,data)},
+            error: function(XHR,text,thrown) {errorLoad(text,thrown); stopLoadAnimation()} 
+        })
+    }
+}
+
+// ================= ДОБАВЛЕНИЕ ЦИТАТЫ ================
+
+function AddSendError (form,btn) {
+    btn.button('loading');
+    btn.addClass('btn-danger');
+    btn.button('error');}
+
+function AddSendSuccess (form,btn) {
+    btn.button('success');
+    btn.addClass('btn-success')
+    form.find('input').val('');
+    form.find('textarea').val('');
+}
+
+function startAddSendAjax (data,form,btn) {
+    btn.button('loading');
+    alert('Оп-па гангнам стайл');
+    AddSendSuccess(form,btn);
+}
+
+function startAddSend(btn) {
+    btn.removeClass('btn-danger'); // Убираем на всякий случай: вдруг есть?
+    btn.removeClass('btn-success');
+    form = btn.parent().parent();
+    name = form.find('#name').val();
+    captcha = form.find('#captcha').val();
+    text = form.find('#text').val();
+    data = {'name':name,'captcha':captcha,'text':text};
+    startAddSendAjax(data,form,btn);
+}
+
+// ================== ПРОЯВЛЕНИЕ ПРИ НАВЕДЕНИИ =================
+
+
+// ================= ВЕШАЕМ ДЕЙСТВИЯ ================
+
+$(document).ready(function (){
+    $('#menu>li>a').click(function(){ // Активные менюшка
+        var el = $(this);
+        loadpage(el);
+        return false;
+    });
+
+    alert.bind('closed', function () { // При закрытии алерта делать его скрытым
+          alert.addClass("hide");
+    });
+})

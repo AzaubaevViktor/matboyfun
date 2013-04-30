@@ -1,0 +1,889 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"head",
+				"head_quote"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"padd",
+				"padding-bottom:   (property)"
+			],
+			[
+				"font-",
+				"font-size:   (property)"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"show",
+				"showQuoteAndAll"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"star",
+				"startLoadAnimation"
+			],
+			[
+				"load",
+				"loadcomment"
+			],
+			[
+				"btn",
+				"btn-comment"
+			],
+			[
+				"Sli",
+				"AnimationTimeSlideVertical"
+			],
+			[
+				"funct",
+				"function"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"move",
+				"moveRight"
+			],
+			[
+				"is",
+				"isLocalStorageAvailable"
+			],
+			[
+				"_",
+				"_Bind"
+			],
+			[
+				"bin",
+				"bind_by_page"
+			],
+			[
+				"ass",
+				"addClass"
+			],
+			[
+				"for",
+				"form"
+			],
+			[
+				"b",
+				"button"
+			],
+			[
+				"add",
+				"AddSendError"
+			],
+			[
+				"start",
+				"startAddSendAjax"
+			],
+			[
+				"child",
+				"children  (function)"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"line-",
+				"line-height	zen:css_properties"
+			],
+			[
+				"Anima",
+				"AnimationTimeSlideVertical"
+			],
+			[
+				"block",
+				"blockquote"
+			],
+			[
+				"chi",
+				"children  (function)"
+			],
+			[
+				"scr",
+				"script"
+			],
+			[
+				"commentHeih",
+				"commentHeightDown"
+			],
+			[
+				"comm",
+				"commentHeightDown"
+			],
+			[
+				"com",
+				"commentsOpened"
+			],
+			[
+				"height",
+				"height"
+			],
+			[
+				"su",
+				"succesLoadComm"
+			],
+			[
+				"succe",
+				"succesload"
+			],
+			[
+				"sta",
+				"startLoadAnimation"
+			],
+			[
+				"loa",
+				"loadcomment"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"scrt",
+				"scripts"
+			],
+			[
+				"clas",
+				"class=  (attribute)"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"remove",
+				"removeClass  (function)"
+			],
+			[
+				"mini",
+				"minibutton"
+			],
+			[
+				"min",
+				"minibutton"
+			],
+			[
+				"borde",
+				"border-bottom"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"div_",
+				"div_loadimage"
+			],
+			[
+				"div",
+				"div_loadimage"
+			],
+			[
+				"s",
+				"script"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"bore",
+				"border-left"
+			],
+			[
+				"mat",
+				"matplotlib  (module)"
+			],
+			[
+				"r",
+				"r"
+			],
+			[
+				"get",
+				"getS"
+			],
+			[
+				"a",
+				"a"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"A",
+				"A"
+			],
+			[
+				"row",
+				"row-1"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 9935,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.html",
+			"settings":
+			{
+				"buffer_size": 6055,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/user.js",
+			"settings":
+			{
+				"buffer_size": 12590,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/user.css",
+			"settings":
+			{
+				"buffer_size": 10954,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "comments149.html",
+			"settings":
+			{
+				"buffer_size": 2611,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"sublim",
+				"SublimeCodeIntel: Reset"
+			],
+			[
+				"emme",
+				"Emmet: Merge Lines"
+			],
+			[
+				"html ",
+				"Set Syntax: HTML"
+			],
+			[
+				"emmet",
+				"Emmet: Encode\\Decode Image to data:URL"
+			],
+			[
+				"",
+				"Convert Case: Lower Case"
+			],
+			[
+				"emm",
+				"Emmet: Expand Abbreviation"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"lore",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"snipp",
+				"Snippet: html"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"lorem",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"env",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"lo",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"snip",
+				"Snippet: html"
+			],
+			[
+				"sni",
+				"Snippet: Table"
+			],
+			[
+				"snippet",
+				"Snippet: \\begin{}…\\end{}"
+			],
+			[
+				"tex",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 171.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/ktulhy/.config/sublime-text-2/Packages/SublimeCodeIntel/Default (Linux).sublime-keymap",
+		"/home/ktulhy/.config/sublime-text-2/Packages/SublimeCodeIntel/Default (Linux).sublime-mousemap",
+		"/home/ktulhy/.config/sublime-text-2/Packages/Emmet/Emmet.sublime-settings",
+		"/home/ktulhy/.config/sublime-text-2/Packages/User/Emmet.sublime-settings",
+		"/home/ktulhy/www/matboyfun_py/css/user.css",
+		"/home/ktulhy/www/matboyfun_py/css/bootstrap.css",
+		"/home/ktulhy/www/matboyfun_py/404.html",
+		"/home/ktulhy/www/matboyfun_py/about.html",
+		"/home/ktulhy/www/matboyfun_py/news.html",
+		"/home/ktulhy/www/matboyfun_py/comments149.html",
+		"/home/ktulhy/www/matboyfun_py/2.html",
+		"/etc/udev/rules.d/51-android.rules",
+		"/home/ktulhy/www/matboyfun_py/stat.html",
+		"/home/ktulhy/www/matboyfun_py/add.html",
+		"/home/ktulhy/www/matboyfun_py/js/bootstrap-dropdown.js",
+		"/home/ktulhy/www/matboyfun_py/js/bootstrap-affix.js",
+		"/home/ktulhy/www/matboyfun_py/js/bind_add.js",
+		"/home/ktulhy/www/matboyfun_py/js/jquery.timers.js",
+		"/home/ktulhy/www/matboyfun_py/js/bind_main.js",
+		"/home/ktulhy/www/matboyfun_py/add.php",
+		"/home/ktulhy/Dropbox/Apps/Nitro/nitro_data.json",
+		"/home/ktulhy/www/matboyfun_py/js/user.js",
+		"/home/ktulhy/www/matboyfun_py/js/bootstrap-button.js",
+		"/home/ktulhy/www/matboyfun_py/polls.html",
+		"/home/ktulhy/www/matboyfun_py/comments244.html",
+		"/home/ktulhy/www/matboyfun_py/main.html",
+		"/home/ktulhy/www/matboyfun_py/js/bind_stat.js",
+		"/home/ktulhy/www/matboyfun_py/comments224.html",
+		"/home/ktulhy/www/matboyfun_py/js/bind_stat",
+		"/home/ktulhy/www/matboyfun_py/stat.js",
+		"/home/ktulhy/www/matboyfun_py/js/bind.js",
+		"/home/ktulhy/www/matboyfun_py/js/bootstrap.js",
+		"/home/ktulhy/www/matboyfun_py/js/bootstrap-alert.js",
+		"/home/ktulhy/www/matboyfun_py/js/user_.js",
+		"/home/ktulhy/www/matboyfun_py/test.php",
+		"/home/ktulhy/www/matboyfun_py/test.py",
+		"/home/ktulhy/.config/sublime-text-2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/home/ktulhy/www/matboyfun_NEW/index.php",
+		"/home/ktulhy/www/matboyfun_py/js/bootstrap-modal.js",
+		"/home/ktulhy/www/resmbf.sql",
+		"/home/ktulhy/www/matboyfun_NEW/main.php",
+		"/home/ktulhy/Dropbox/Программы/python/test.py",
+		"/home/ktulhy/www/matboyfun_NEW/ui.php",
+		"/home/ktulhy/Dropbox/Программы/python/Эволюция/untitled",
+		"/home/ktulhy/Документы/ПРОГРАММИРОВАНИЕ/Олимпиадные задачи/kotov/_Poisk.txt",
+		"/home/ktulhy/Документы/ПРОГРАММИРОВАНИЕ/Олимпиадные задачи/kotov/Poisk.txt",
+		"/home/ktulhy/Документы/ПРОГРАММИРОВАНИЕ/Олимпиадные задачи/kotov/Struct.txt",
+		"/home/ktulhy/Документы/ПРОГРАММИРОВАНИЕ/Олимпиадные задачи/kotov/Recurr.txt",
+		"/home/ktulhy/Dropbox/Программы/python/Brain/test.py",
+		"/home/ktulhy/Документы/Ломоносов/math.tex",
+		"/home/ktulhy/Документы/Волновая теория чикуль.tex",
+		"/home/ktulhy/.config/sublime-text-2/Packages/User/LaTeX.sublime-build",
+		"/home/ktulhy/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/ktulhy/.config/sublime-text-2/Installed Packages/Package Control.sublime-package",
+		"/home/ktulhy/.config/sublime-text-2/Packages/LaTeX/begin{}-end{}.sublime-snippet",
+		"/home/ktulhy/Документы/*.tex",
+		"/home/ktulhy/www/matboyfun_NEW/css/bootstrap.css",
+		"/home/ktulhy/olymp/2.py",
+		"/home/ktulhy/olymp/1.py",
+		"/home/ktulhy/olymp/3.py",
+		"/home/ktulhy/olymp/input.txt",
+		"/home/ktulhy/olymp/output.txt",
+		"/home/ktulhy/.config/sublime-text-2/Packages/User/Python.sublime-settings",
+		"/home/ktulhy/Dropbox/Программы/python/input.txt",
+		"/home/ktulhy/Документы/ПРОГРАММИРОВАНИЕ/Олимпиадные задачи/kotov/Geometr.txt",
+		"/home/ktulhy/Dropbox/Программы/python/geometry7.py",
+		"/home/ktulhy/Dropbox/Программы/python/trian.py",
+		"/home/ktulhy/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/ktulhy/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/ktulhy/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/ktulhy/.config/sublime-text-2/Packages/Python/Python.sublime-build"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\\",
+			"(){\\\n",
+			"load",
+			":",
+			";",
+			"<username>",
+			"SUBSYSTEM",
+			"alert",
+			"alerts",
+			"удаля",
+			"showQuote",
+			"loadcomment",
+			"num",
+			"242",
+			"222",
+			"quote222",
+			"4px",
+			"bold",
+			"btn:",
+			"button",
+			"button:",
+			"Alert_Text",
+			"\n      <small><b>+</b>(<font style=\"color:green\">666</font>/<font style=\"color:red\">666</font>)<b>-</b></small>",
+			"20px",
+			"1s",
+			".nav-pills > li > a",
+			":hover",
+			"hover",
+			"h3",
+			"Контакты",
+			"\n<h3>Контакты",
+			"<h3>",
+			"Контакты",
+			"\n<h3>Контакты",
+			"<h3>",
+			"\n<h3>Контакты",
+			"<h3>",
+			"time",
+			"minibutton",
+			"height",
+			"news",
+			"News",
+			"news",
+			"News",
+			"news",
+			"\"",
+			"    \"",
+			": ",
+			"commentHeightDown",
+			": ",
+			"if (Debugging) console.log",
+			"log",
+			"if (Debugging) console.log",
+			"();\"}",
+			"Alert_Text",
+			"_Alert_Text",
+			"_showhideimage",
+			"insertHTML",
+			"CreateAlert",
+			"244",
+			"comments244",
+			"el",
+			"btn-danger",
+			"display: inline",
+			"4px",
+			"inset",
+			"news",
+			"10px",
+			"0088cc",
+			" 0px",
+			"250",
+			"AnimationTime",
+			"<small>Username",
+			"quote",
+			"Dubugging",
+			"console",
+			".inli",
+			".inline",
+			"inline",
+			"    ",
+			".",
+			"Апатит",
+			"!",
+			" -",
+			"class=\"span7\"",
+			"span7",
+			"margin0",
+			"margin-bottom: 0px",
+			"id",
+			"КОСТЫЛЬ#1",
+			"КОСТЫЛЬ",
+			"250",
+			"showhideimage",
+			"IsEndAnimation",
+			"hideandimage",
+			"conte",
+			"h1",
+			"text-align: center",
+			"=span",
+			"span8",
+			"span*",
+			"[span",
+			"btn-mini",
+			"body",
+			"btn-mini",
+			"body",
+			"margin-left: 0",
+			"dropdown",
+			": inline",
+			"dropdown",
+			": inline",
+			"inline",
+			"margin-left",
+			"gn: right",
+			": right",
+			"right",
+			"body",
+			".nav ",
+			".nav",
+			".nav*a",
+			"nav-stacked",
+			"nav-pills ",
+			"nav-pills",
+			"nav-pills*hower",
+			"\n  ",
+			"h1",
+			"	   	",
+			"'], "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"caramba",
+			" 0",
+			"<b>Username</b><small>",
+			"  "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 9935,
+						"regions":
+						{
+							"mark":
+							{
+								"flags": 144,
+								"icon": "dot",
+								"regions":
+								[
+								],
+								"scope": "mark"
+							}
+						},
+						"selection":
+						[
+							[
+								9093,
+								9093
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3111.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "main.html",
+					"settings":
+					{
+						"buffer_size": 6055,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1938,
+								1938
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 77.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/user.js",
+					"settings":
+					{
+						"buffer_size": 12590,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5840,
+								5840
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2017.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/user.css",
+					"settings":
+					{
+						"buffer_size": 10954,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15,
+								15
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "comments149.html",
+					"settings":
+					{
+						"buffer_size": 2611,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								153,
+								153
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 135.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"add",
+				"add.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 152.0,
+	"status_bar_visible": true
+}

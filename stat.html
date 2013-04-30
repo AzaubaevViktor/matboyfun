@@ -1,0 +1,32 @@
+<div class="topic">
+  Статистика
+</div>
+<!-- График HTML -->
+<div id="quotes">
+</div>
+<!-- Конец графика HTML -->
+
+<script type="text/javascript" src="js/raphael-min.js"></script>
+<script type="text/javascript" src="js/morris.min.js"></script>
+
+<script>
+function draw() {
+  Morris.Line({
+  element: 'quotes',
+  data: [
+    {y: '2012', a: 100},
+    {y: '2011', a: 75},
+    {y: '2010', a: 50},
+    {y: '2009', a: 75},
+    {y: '2008', a: 50},
+    {y: '2007', a: 75},
+    {y: '2006', a: 100}
+  ],
+  xkey: 'y',
+  ykeys: ['a'],
+  labels: ['Series A']
+});
+}
+</script>
+<!-- fuck -->
+<!-- <script type="text/javascript" src="js/bind_stat.js"></script> -->
